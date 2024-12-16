@@ -6,18 +6,12 @@ gantt
     dateFormat  YYYY-MM-DD
     excludes weekends
 
-    %% Definición de Clases para la Leyenda
-    classDef proceso fill:#1f77b4,stroke:#333,stroke-width:1px, color:#ffffff;
-    classDef ingreso fill:#2ecc71,stroke:#333,stroke-width:1px, color:#ffffff;
-    classDef gasto fill:#e74c3c,stroke:#333,stroke-width:1px, color:#ffffff;
-    classDef financiamiento fill:#e67e22,stroke:#333,stroke-width:1px, color:#ffffff;
-
     %% Leyenda
     section Leyenda
-    PS[Pasos del Proceso]:::proceso
-    EI[Ingresos]:::ingreso
-    AE[Gastos]:::gasto
-    FA[Financiamiento]:::financiamiento
+    Pasos del Proceso: done, proceso, 2024-01-01, 1d
+    Ingresos: active, ingreso, 2024-01-01, 1d
+    Gastos: done, gasto, 2024-01-01, 1d
+    Financiamiento: active, financiamiento, 2024-01-01, 1d
 
     %% Inicio: Pool de Médicos
     section Inicio
@@ -67,9 +61,6 @@ gantt
     milestone Inicio Trabajo como Médico, 2025-05-04, 0
     milestone Approbation obtenida, 2026-03-01, 0
 
-    %% Clases
-    class a1,a2,a3,a4,a5,a6,a7,b1,b2,b3,b4,b5,b6,b7,b8,b9,b10,b11,b12,b13,b14,b15 proceso;
-    class m1,m2,m3,m4 ingreso;
     class c1 gasto;
     class b2,b5 financiamiento;
     class Entrega_Visa,Inicio_Trabajo_Medico,Approbation_obtenida milestone;
