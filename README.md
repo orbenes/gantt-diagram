@@ -6,11 +6,6 @@ gantt
     dateFormat  YYYY-MM-DD
     excludes weekends
 
-    %% Leyenda (Opcional)
-    %% Puedes eliminar esta sección si causa problemas
-    %% O bien, asegurarte de que la sintaxis sea correcta
-    %% En este ejemplo, la he eliminado para evitar errores
-
     %% Inicio: Pool de Médicos
     section Inicio
     Pool de Médicos :a1, 2024-01-01, 1d
@@ -55,9 +50,9 @@ gantt
     Otros Gastos (Variables) :c1, after b12, 365d
 
     %% Meilensteine (Hitos)
-    milestone Entrega Visa, 2024-10-01, milestone
-    milestone Inicio Trabajo como Médico, 2025-05-04, milestone
-    milestone Approbation obtenida, 2026-03-01, milestone
+    milestone Entrega Visa, 2024-10-01, 0
+    milestone Inicio Trabajo como Médico, 2025-05-04, 0
+    milestone Approbation obtenida, 2026-03-01, 0
 
     %% Estilos personalizados usando 'style'
     style a1 fill:#1f77b4,stroke:#333,stroke-width:1px, color:#ffffff
